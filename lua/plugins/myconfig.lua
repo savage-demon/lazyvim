@@ -14,6 +14,7 @@ if true then return {
   },
 
   -- neotest
+  { "nvim-neotest/nvim-nio" },
   { "nvim-neotest/neotest-plenary" },
   {
     "nvim-neotest/neotest",
@@ -41,16 +42,6 @@ if true then return {
       { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
-  },
-
-  {
-    "andythigpen/nvim-coverage",
-    requires = "nvim-lua/plenary.nvim",
-    -- Optional: needed for PHP when using the cobertura parser
-    rocks = { 'lua-xmlreader' },
-    config = function()
-      require("coverage").setup()
-    end,
   },
 
 } end
